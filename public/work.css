@@ -42,7 +42,6 @@ body::-webkit-scrollbar {
 
 #logo {
     color: white;
-
     font-family: 'Akaya Kanadaka';
     font-size: 30px;
 }
@@ -349,7 +348,7 @@ body::-webkit-scrollbar {
     right: 5px;
     bottom: -60px;
     padding: 10px 15px;
-    
+
     color: white;
     border: none;
     border-radius: 8px;
@@ -362,4 +361,325 @@ body::-webkit-scrollbar {
 #backtoTop i {
     font-size: 30px;
     cursor: pointer;
+}
+
+
+
+
+#mobileNav {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+@media (max-width:1000px) {
+
+
+    #navControl {
+        position: fixed;
+        bottom: -100%;
+        height: 100%;
+        background-color: rgb(36, 36, 36);
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        transition: .2s;
+        opacity: .5;
+        box-sizing: border-box;
+        left: 0;
+    }
+
+    #mobileNav {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        cursor: pointer;
+        position: fixed;
+        right: 3%;
+        top: 3%;
+
+    }
+
+    #mobileNav #line1 {
+        width: 20px;
+        height: 2px;
+        background-color: white;
+        right: 3%;
+        transition: .4s;
+        cursor: pointer;
+    }
+
+    #mobileNav #line2 {
+        width: 20px;
+        height: 2px;
+        background-color: rgb(255, 255, 255);
+        right: 3%;
+        transition: .4s;
+        cursor: pointer;
+    }
+}
+
+
+
+
+
+
+@media (max-width:600px) {
+    body {}
+
+    #headerNav {
+        padding: 5px 10px;
+
+    }
+
+    #logo label {
+        font-size: 20px;
+    }
+
+    #navControl {
+        position: fixed;
+        bottom: -100%;
+        height: 100%;
+        background-color: rgb(36, 36, 36);
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        transition: .2s;
+        opacity: .5;
+        box-sizing: border-box;
+        left: 0;
+
+    }
+
+    #navControl a {
+        font-size: 15px;
+    }
+
+    #navControl label {
+        height: 2px;
+    }
+
+    #mobileNav {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        cursor: pointer;
+        position: fixed;
+        right: 3%;
+        top: 3%;
+
+    }
+
+    #mobileNav #line1 {
+        width: 20px;
+        height: 2px;
+        background-color: white;
+        right: 3%;
+        transition: .4s;
+        cursor: pointer;
+    }
+
+    #mobileNav #line2 {
+        width: 20px;
+        height: 2px;
+        background-color: rgb(255, 255, 255);
+        right: 3%;
+        transition: .4s;
+        cursor: pointer;
+    }
+
+
+
+
+
+
+    /*mainContent*/
+
+    #frontTextBody {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        color: white;
+    }
+
+    #frontText {
+        margin: auto;
+        text-align: center;
+        font-family: 'Akaya Kanadaka';
+        font-size: 70px;
+        display: flex;
+        flex-direction: column;
+        margin-top: 80px;
+
+    }
+
+    #subText {
+        text-align: center;
+        font-family: 'Poppins';
+        font-size: 12px;
+        line-height: normal;
+    }
+
+
+
+    /*worksContent*/
+
+    #worksBody {
+
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 55px;
+        box-sizing: border-box;
+        padding: 10px;
+    }
+
+    #work1 {
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        max-width: 1319px;
+
+    }
+
+    #work1 img {
+        width: 100%;
+        max-width: 1319px;
+        transition: .3s;
+
+    }
+
+    #work1 img:hover {
+        transform: scale(.97);
+        opacity: 0.5;
+    }
+
+    #work1Desc {
+        line-height: auto;
+        color: white;
+        padding: 5px;
+    }
+
+    #work1Desc label {
+        font-family: 'Righteous';
+        font-size: 15px;
+    }
+
+    #work1Desc p {
+        font-family: 'Poppins';
+        font-size: 12px;
+    }
+
+
+
+
+    /*footer*/
+
+    #footer {
+        border-top: 1px solid white;
+        margin-top: 5%;
+        padding: 10px;
+        display: flex;
+    }
+
+    #footerContent {
+        max-width: 1319px;
+        display: flex;
+        color: white;
+        margin: auto;
+        width: 100%;
+
+    }
+
+    #footerMessage {
+        width: 60%;
+    }
+
+    #footerMessage label {
+        font-family: 'Akaya Kanadaka';
+        font-size: 18px;
+    }
+
+    #footerMessage p {
+        font-family: 'Poppins';
+        font-size: 10px;
+        font-style: italic;
+    }
+
+    #contact {
+        width: 20%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 6px;
+    }
+
+    #contact label {
+        font-size: 12px;
+        font-family: 'Righteous';
+        margin-bottom: 5px;
+    }
+
+    #contact a {
+        color: white;
+        font-style: italic;
+        font-size: 10px;
+        font-family: 'Poppins';
+    }
+
+    #contact a:hover {
+        color: rgb(175, 175, 175);
+
+    }
+
+
+
+
+
+
+
+
+
+
+    #footerNav {
+        width: 20%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 6px;
+    }
+
+    #footerNav label {
+        font-size: 12px;
+        font-family: 'Righteous';
+        margin-bottom: 5px;
+    }
+
+    #footerNav a {
+        color: white;
+        font-style: italic;
+        font-size: 10px;
+        font-family: 'Poppins';
+    }
+
+    #footerNav a:hover {
+        color: rgb(175, 175, 175);
+
+    }
+
+
+
 }
