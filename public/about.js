@@ -122,21 +122,21 @@ document.getElementById('img1').classList.add('active')
 document.addEventListener('click', (e) => {
     switch (e.target.id) {
         case 'img1':
-            imageForSlider.src = '../assets/Capstone Pic.png'
+            imageForSlider.src = '/myPortfolio/assets/Capstone Pic.png'
             icons.forEach(element => {
                 element.classList.remove('active')
             })
             e.target.classList.add('active')
             break;
         case 'img2':
-            imageForSlider.src = '../assets/img2.png'
+            imageForSlider.src = '/myPortfolio/assets/img2.png'
             icons.forEach(element => {
                 element.classList.remove('active')
             })
             e.target.classList.add('active')
             break;
         case 'img3':
-            imageForSlider.src = '../assets/img3.png'
+            imageForSlider.src = '/myPortfolio/assets/img3.png'
             icons.forEach(element => {
                 element.classList.remove('active')
             })
@@ -144,7 +144,7 @@ document.addEventListener('click', (e) => {
 
             break;
         case 'img4':
-            imageForSlider.src = '../assets/img4.png'
+            imageForSlider.src = '/myPortfolio/assets/img4.png'
             icons.forEach(element => {
                 element.classList.remove('active')
             })
@@ -152,7 +152,7 @@ document.addEventListener('click', (e) => {
 
             break;
         case 'img5':
-            imageForSlider.src = '../assets/img5.png'
+            imageForSlider.src = '/myPortfolio/assets/img5.png'
             icons.forEach(element => {
                 element.classList.remove('active')
             })
@@ -160,7 +160,7 @@ document.addEventListener('click', (e) => {
 
             break;
         case 'img6':
-            imageForSlider.src = '../assets/img6.png'
+            imageForSlider.src = '/myPortfolio/assets/img6.png'
             icons.forEach(element => {
                 element.classList.remove('active')
             })
