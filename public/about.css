@@ -604,6 +604,7 @@ body::-webkit-scrollbar {
         font-family: 'Akaya Kanadaka';
         font-size: 25px;
         width: 100%;
+        color:red;
     }
 
     #introductionAboutme p {
