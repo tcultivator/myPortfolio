@@ -150,3 +150,33 @@ document.getElementById('homeBtn').addEventListener('click',()=>{
     console.log('')
 })
 
+
+
+
+const line1 = document.getElementById('line1')
+const line2 = document.getElementById('line2')
+let navToggle = false;
+document.getElementById('mobileNav').addEventListener('click', () => {
+    navToggle = !navToggle
+    console.log('zxc')
+    navToggle ? (
+        line1.style.position = 'absolute',
+        line2.style.position = 'absolute',
+        line1.style.transform = 'rotate(315deg)',
+        line2.style.transform = 'rotate(225deg)',
+        document.getElementById('navControl').style.bottom = '0',
+        document.getElementById('navControl').style.opacity = '1'
+
+    ) : (
+
+        line1.style.transform = 'rotate(0deg)',
+        line2.style.transform = 'rotate(0deg)',
+        line1.style.position = 'relative',
+        line2.style.position = 'relative',
+        document.getElementById('navControl').style.bottom = '-100%',
+        document.getElementById('navControl').style.opacity = '.5'
+
+    )
+
+})
+
