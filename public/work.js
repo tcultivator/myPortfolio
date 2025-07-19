@@ -29,6 +29,6 @@ window.onscroll = function () {
 
 
 document.getElementById('homeBtn').addEventListener('click',()=>{
-    window.location.replace('../index.html')
+    window.location.replace('index.html')
     console.log('')
 })
