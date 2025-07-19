@@ -113,7 +113,7 @@ window.onscroll = function () {
 
 // image slider
 
-
+let index = 1
 const imageForSlider = document.getElementById('imageForSlider')
 const icons = document.querySelectorAll('#imgControl i');
 
@@ -127,6 +127,7 @@ document.addEventListener('click', (e) => {
                 element.classList.remove('active')
             })
             e.target.classList.add('active')
+            index = 1
             break;
         case 'img2':
             imageForSlider.src = '/myPortfolio/assets/img2.png'
@@ -134,6 +135,7 @@ document.addEventListener('click', (e) => {
                 element.classList.remove('active')
             })
             e.target.classList.add('active')
+            index = 2
             break;
         case 'img3':
             imageForSlider.src = '/myPortfolio/assets/img3.png'
@@ -141,7 +143,7 @@ document.addEventListener('click', (e) => {
                 element.classList.remove('active')
             })
             e.target.classList.add('active')
-
+            index = 3
             break;
         case 'img4':
             imageForSlider.src = '/myPortfolio/assets/img4.png'
@@ -149,6 +151,7 @@ document.addEventListener('click', (e) => {
                 element.classList.remove('active')
             })
             e.target.classList.add('active')
+            index = 4
 
             break;
         case 'img5':
@@ -157,6 +160,7 @@ document.addEventListener('click', (e) => {
                 element.classList.remove('active')
             })
             e.target.classList.add('active')
+            index = 5
 
             break;
         case 'img6':
@@ -165,6 +169,7 @@ document.addEventListener('click', (e) => {
                 element.classList.remove('active')
             })
             e.target.classList.add('active')
+            index = 6
 
             break;
 
@@ -172,7 +177,7 @@ document.addEventListener('click', (e) => {
             break;
     }
 })
-let index = 1
+
 setInterval(() => {
     index++
     if (index >= 7) {
