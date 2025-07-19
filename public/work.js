@@ -14,7 +14,7 @@ gototop.addEventListener('click', () => {
 window.onscroll = function () {
     const btn = document.getElementById('gototop');
 
-    if (document.documentElement.scrollTop > 2000) {
+    if (document.documentElement.scrollTop > 400) {
         btn.style.bottom = '20px';
         btn.style.opacity = '1';        
         
