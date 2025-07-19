@@ -6,7 +6,7 @@ body {
     flex-direction: column;
     overflow: auto;
     scroll-behavior: smooth;
-    gap: 100px;
+    gap: 0px;
 }
 
 body::-webkit-scrollbar {
@@ -134,6 +134,7 @@ body::-webkit-scrollbar {
 
     padding: 50px;
     display: flex;
+    margin-top: 100px;
 }
 
 #aboutmeContents {
@@ -183,6 +184,7 @@ body::-webkit-scrollbar {
     width: 100%;
     box-sizing: border-box;
     padding: 50px;
+    margin-top: 100px;
 }
 
 #techStackContents {
@@ -260,7 +262,7 @@ body::-webkit-scrollbar {
     width: 100%;
     box-sizing: border-box;
     display: flex;
-
+    margin-top: 100px;
     padding: 50px;
 }
 
@@ -281,7 +283,8 @@ body::-webkit-scrollbar {
 #achievementsContents p {
     font-family: 'Poppins';
     font-size: 15px;
-    margin: 0 10px;
+    margin: 0 10px 10px 10px;
+
 }
 
 #achievementsContents img {
@@ -314,6 +317,138 @@ body::-webkit-scrollbar {
 
 #imgControl i.active {
     color: white;
+}
+
+
+
+
+
+
+
+
+#coreValuesBody {
+    width: 100%;
+    display: flex;
+    box-sizing: border-box;
+    padding: 50px;
+}
+
+#corevalueContent {
+    margin: auto;
+    width: 100%;
+    max-width: 1319px;
+}
+
+#corevalueContent label {
+    font-family: 'Sarpanch';
+    font-size: 50px;
+    color: #CCCCCC;
+}
+
+#corevalueContent li {
+    font-family: 'Poppins';
+    font-size: 30px;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*footer*/
+
+#footer {
+    border-top: 1px solid white;
+    margin-top: 5%;
+    padding: 3%;
+    display: flex;
+}
+
+#footerContent {
+    max-width: 1319px;
+    display: flex;
+    color: white;
+    margin: auto;
+    width: 100%;
+
+}
+
+#footerMessage {
+    width: 70%;
+}
+
+#footerMessage label {
+    font-family: 'Akaya Kanadaka';
+    font-size: 50px;
+}
+
+#footerMessage p {
+    font-family: 'Poppins';
+    font-size: 20px;
+    font-style: italic;
+}
+
+#contact {
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+}
+
+#contact label {
+    font-size: 20px;
+    font-family: 'Righteous';
+    margin-bottom: 5px;
+}
+
+#contact a {
+    color: white;
+    font-style: italic;
+    font-size: 20px;
+    font-family: 'Poppins';
+}
+
+#contact a:hover {
+    color: rgb(175, 175, 175);
+
+}
+
+
+
+
+
+
+
+
+
+
+#footerNav {
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+}
+
+#footerNav label {
+    font-size: 20px;
+    font-family: 'Righteous';
+    margin-bottom: 5px;
+}
+
+#footerNav a {
+    color: white;
+    font-style: italic;
+    font-size: 20px;
+    font-family: 'Poppins';
+}
+
+#footerNav a:hover {
+    color: rgb(175, 175, 175);
+
 }
 
 
