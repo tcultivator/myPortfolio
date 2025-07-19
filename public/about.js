@@ -40,37 +40,6 @@ document.addEventListener('click', (e) => {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 const gototop = document.getElementById('gototop')
 
 gototop.addEventListener('click', () => {
@@ -95,19 +64,6 @@ window.onscroll = function () {
 
     }
 };
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
