@@ -1,0 +1,350 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: rgb(36, 36, 36);
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    scroll-behavior: smooth;
+    gap: 100px;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+
+
+
+/*Header*/
+
+
+#headerNav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+#navControl {
+    display: flex;
+    font-family: 'Righteous';
+    justify-content: center;
+    gap: 40px;
+}
+
+#navControl a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+#logo {
+    color: white;
+
+    font-family: 'Akaya Kanadaka';
+    font-size: 30px;
+}
+
+#logo label {
+    cursor: pointer;
+    font-size: 30px;
+}
+
+#aboutBtn {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+}
+
+#aboutBtn label {
+    width: 100%;
+    height: 3px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+
+}
+
+
+
+
+#workBtn {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+
+
+}
+
+#workBtn label {
+    width: 0px;
+    height: 3px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    transition: .5s;
+
+}
+
+#workBtn a:hover~label {
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+#resumeBtn {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+}
+
+#resumeBtn label {
+    width: 0px;
+    height: 3px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    transition: .5s;
+
+}
+
+#resumeBtn a:hover~label {
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+#aboutMeMain {
+
+    padding: 50px;
+    display: flex;
+}
+
+#aboutmeContents {
+    margin: auto;
+    max-width: 1319px;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+#introductionAboutme {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    padding: 0;
+}
+
+#introductionAboutme label {
+    font-family: 'Akaya Kanadaka';
+    font-size: 50px;
+    width: 90%;
+}
+
+#introductionAboutme p {
+    font-family: 'Poppins';
+    font-size: 15px;
+    margin-bottom: -7px;
+    width: 80%;
+}
+
+#imgBody {
+    max-width: 454px;
+}
+
+
+
+
+
+
+
+
+
+#techStackBody {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 50px;
+}
+
+#techStackContents {
+    max-width: 1319px;
+    width: 100%;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#techStackContents label {
+    font-family: 'Akaya Kanadaka';
+    font-size: 40px;
+    color: white;
+}
+
+#contentsOfStack {
+    display: flex;
+    gap: 60px;
+}
+
+#gridTechStack {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    width: 50%;
+}
+
+#gridTechStack img {
+    cursor: pointer;
+    transition: .2s;
+    width: 100%;
+}
+
+#gridTechStack img:hover {
+    transform: scale(1.05);
+}
+
+#gridTechStack img:not(:hover) {
+    opacity: .5;
+}
+
+#gridTechStack img:active {
+    opacity: 1;
+}
+
+
+
+
+#techStackDesc {
+    color: white;
+    background-color: #4A4A4A;
+    border-radius: 10px;
+    padding: 15px;
+    width: 50%;
+}
+
+#techStackDesc label {
+    font-family: 'Righteous';
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+#achievementsBody {
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+
+    padding: 50px;
+}
+
+#achievementsContents {
+    margin: auto;
+    max-width: 1319px;
+    width: 100%;
+    color: white;
+}
+
+#achievementsContents label {
+    font-family: 'Sarpanch';
+    font-size: 30px;
+    color: #CCCCCC;
+    margin: 0 10px;
+}
+
+#achievementsContents p {
+    font-family: 'Poppins';
+    font-size: 15px;
+    margin: 0 10px;
+}
+
+#achievementsContents img {
+    width: 100%;
+    max-width: 1319px;
+}
+
+
+
+
+
+
+#imgControl {
+    margin: auto;
+    width: 100%;
+    padding: 10px;
+    font-size: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+
+#imgControl i {
+    color: rgb(114, 114, 114);
+    cursor: pointer;
+    margin: 5px;
+    transition: 0.2s;
+}
+
+#imgControl i.active {
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* backtotopbtn*/
+
+#backtoTop a {
+    position: fixed;
+    right: 5px;
+    bottom: -60px;
+    padding: 10px 15px;
+
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: bottom 0.3s ease, opacity 0.3s ease;
+    opacity: 0;
+    cursor: pointer;
+}
+
+#backtoTop i {
+    font-size: 30px;
+    cursor: pointer;
+}
