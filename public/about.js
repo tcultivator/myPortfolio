@@ -186,3 +186,10 @@ setInterval(() => {
     document.getElementById(`img${index}`).click()
 }, 4000);
 
+
+
+
+document.getElementById('homeBtn').addEventListener('click',()=>{
+    window.location.replace('../index.html')
+}
+
