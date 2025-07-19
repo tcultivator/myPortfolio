@@ -483,3 +483,560 @@ body::-webkit-scrollbar {
     font-size: 30px;
     cursor: pointer;
 }
+
+
+
+
+
+
+#mobileNav {
+    display: none;
+}
+
+@media (max-width:600px) {
+    body {}
+
+    #headerNav {
+        padding: 5px 10px;
+
+    }
+
+    #logo label {
+        font-size: 20px;
+    }
+
+    #navControl {
+        position: fixed;
+        bottom: -100%;
+        height: 100%;
+        background-color: rgb(36, 36, 36);
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        transition: .2s;
+        opacity: .5;
+        box-sizing: border-box;
+        left: 0;
+
+    }
+
+    #navControl a {
+        font-size: 15px;
+    }
+
+    #navControl label {
+        height: 2px;
+    }
+
+    #mobileNav {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        cursor: pointer;
+        position: fixed;
+        right: 3%;
+        top: 3%;
+
+    }
+
+    #mobileNav #line1 {
+        width: 20px;
+        height: 2px;
+        background-color: white;
+        right: 3%;
+        transition: .4s;
+        cursor: pointer;
+    }
+
+    #mobileNav #line2 {
+        width: 20px;
+        height: 2px;
+        background-color: rgb(255, 255, 255);
+        right: 3%;
+        transition: .4s;
+        cursor: pointer;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+    #aboutMeMain {
+
+        padding: 10px;
+        display: flex;
+
+    }
+
+    #aboutmeContents {
+        margin: auto;
+        max-width: 1319px;
+        width: 100%;
+        text-align: left;
+        display: flex;
+        flex-direction: column-reverse;
+
+
+    }
+
+    #introductionAboutme {
+        color: white;
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        padding: 0;
+
+        margin-top: -40px;
+    }
+
+    #introductionAboutme label {
+        font-family: 'Akaya Kanadaka';
+        font-size: 30px;
+        width: 100%;
+    }
+
+    #introductionAboutme p {
+        font-family: 'Poppins';
+        font-size: 12px;
+        margin-bottom: -7px;
+        width: 100%;
+    }
+
+    #imgBody {
+        width: 100%;
+
+    }
+
+    #imgBody img {
+        width: 100%;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    #techStackBody {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 10px;
+        margin-top: 100px;
+
+    }
+
+    #techStackContents {
+        max-width: 1319px;
+        width: 100%;
+        display: flex;
+        margin: auto;
+        flex-direction: column;
+        gap: 5px;
+        box-sizing: border-box;
+
+    }
+
+    #techStackContents label {
+        font-family: 'Akaya Kanadaka';
+        font-size: 20px;
+        color: white;
+    }
+
+    #contentsOfStack {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        flex-direction: column;
+
+    }
+
+    #gridTechStack {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 10px;
+        width: 100%;
+
+
+    }
+
+    #gridTechStack img {
+        cursor: pointer;
+        transition: .2s;
+        width: 100%;
+    }
+
+    #gridTechStack img:hover {
+        transform: scale(1.05);
+    }
+
+    #gridTechStack img:not(:hover) {
+        opacity: .5;
+    }
+
+    #gridTechStack img:active {
+        opacity: 1;
+    }
+
+
+
+
+    #techStackDesc {
+        color: white;
+        background-color: #4A4A4A;
+        border-radius: 10px;
+        box-sizing: border-box;
+        width: 100%;
+        padding: 10px;
+    }
+
+    #techStackDesc label {
+        font-family: 'Righteous';
+        font-size: 15px;
+    }
+
+    #techStackDesc p {
+        font-size: 12px;
+        font-family: 'Poppins';
+    }
+
+
+
+
+
+
+
+
+
+
+    #achievementsBody {
+        width: 100%;
+        box-sizing: border-box;
+        display: flex;
+        margin-top: 50px;
+        padding: 10px;
+    }
+
+    #achievementsContents {
+        margin: auto;
+        max-width: 1319px;
+        width: 100%;
+        color: white;
+    }
+
+    #achievementsContents label {
+        font-family: 'Sarpanch';
+        font-size: 20px;
+        color: #CCCCCC;
+        margin: 0;
+    }
+
+    #achievementsContents p {
+        font-family: 'Poppins';
+        font-size: 12px;
+        margin: 5px 0;
+
+    }
+
+    #achievementsContents img {
+        width: 100%;
+        max-width: 1319px;
+    }
+
+
+
+
+
+
+    #imgControl {
+        margin: auto;
+        width: 100%;
+        padding: 10px;
+        font-size: 10px;
+        display: flex;
+        justify-content: center;
+        gap: 3px;
+        box-sizing: border-box;
+    }
+
+
+    #imgControl i {
+        color: rgb(114, 114, 114);
+        cursor: pointer;
+        margin: 5px;
+        transition: 0.2s;
+    }
+
+    #imgControl i.active {
+        color: white;
+    }
+
+
+
+
+
+
+
+
+
+
+
+    #coreValuesBody {
+        width: 100%;
+        display: flex;
+        box-sizing: border-box;
+        padding: 10px;
+    }
+
+    #corevalueContent {
+        margin: auto;
+        width: 100%;
+        max-width: 1319px;
+    }
+
+    #corevalueContent label {
+        font-family: 'Sarpanch';
+        font-size: 30px;
+        color: #CCCCCC;
+    }
+
+    #corevalueContent li {
+        font-family: 'Poppins';
+        font-size: 15px;
+        color: white;
+    }
+
+
+
+
+
+
+
+
+
+
+
+    /*footer*/
+
+    #footer {
+        border-top: 1px solid white;
+        margin-top: 5%;
+        padding: 10px;
+        display: flex;
+    }
+
+    #footerContent {
+        max-width: 1319px;
+        display: flex;
+        color: white;
+        margin: auto;
+        width: 100%;
+
+    }
+
+    #footerMessage {
+        width: 60%;
+    }
+
+    #footerMessage label {
+        font-family: 'Akaya Kanadaka';
+        font-size: 18px;
+    }
+
+    #footerMessage p {
+        font-family: 'Poppins';
+        font-size: 10px;
+        font-style: italic;
+    }
+
+    #contact {
+        width: 20%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 6px;
+    }
+
+    #contact label {
+        font-size: 12px;
+        font-family: 'Righteous';
+        margin-bottom: 5px;
+    }
+
+    #contact a {
+        color: white;
+        font-style: italic;
+        font-size: 10px;
+        font-family: 'Poppins';
+    }
+
+    #contact a:hover {
+        color: rgb(175, 175, 175);
+
+    }
+
+
+
+
+
+
+
+
+
+
+    #footerNav {
+        width: 20%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 6px;
+    }
+
+    #footerNav label {
+        font-size: 12px;
+        font-family: 'Righteous';
+        margin-bottom: 5px;
+    }
+
+    #footerNav a {
+        color: white;
+        font-style: italic;
+        font-size: 10px;
+        font-family: 'Poppins';
+    }
+
+    #footerNav a:hover {
+        color: rgb(175, 175, 175);
+
+    }
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:1000px) {
+
+
+    #navControl {
+        position: fixed;
+        bottom: -100%;
+        height: 100%;
+        background-color: rgb(36, 36, 36);
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        transition: .2s;
+        opacity: .5;
+        box-sizing: border-box;
+        left: 0;
+    }
+
+    #mobileNav {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        cursor: pointer;
+        position: fixed;
+        right: 3%;
+        top: 3%;
+
+    }
+
+    #mobileNav #line1 {
+        width: 20px;
+        height: 2px;
+        background-color: white;
+        right: 3%;
+        transition: .4s;
+        cursor: pointer;
+    }
+
+    #mobileNav #line2 {
+        width: 20px;
+        height: 2px;
+        background-color: rgb(255, 255, 255);
+        right: 3%;
+        transition: .4s;
+        cursor: pointer;
+    }
+
+
+
+
+    #aboutMeMain {
+
+        padding: 50px;
+        display: flex;
+        margin-top: 100px;
+    }
+
+    #aboutmeContents {
+        margin: auto;
+        max-width: 1319px;
+        width: 100%;
+        text-align: left;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    #introductionAboutme {
+        color: white;
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        padding: 0;
+    }
+
+    #introductionAboutme label {
+        font-family: 'Akaya Kanadaka';
+        font-size: 50px;
+        width: 100%;
+    }
+
+    #introductionAboutme p {
+        font-family: 'Poppins';
+        font-size: 15px;
+        margin-bottom: -7px;
+        width: 100%;
+    }
+
+    #imgBody {
+        max-width: 454px;
+    }
+}
