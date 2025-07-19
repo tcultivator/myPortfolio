@@ -122,7 +122,7 @@ document.getElementById('img1').classList.add('active')
 document.addEventListener('click', (e) => {
     switch (e.target.id) {
         case 'img1':
-            imageForSlider.src = '/myPortfolio/assets/Capstone Pic.png'
+            imageForSlider.src = '/myPortfolio/assets/CapstonePic.png'
             icons.forEach(element => {
                 element.classList.remove('active')
             })
