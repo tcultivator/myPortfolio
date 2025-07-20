@@ -1001,7 +1001,7 @@ body::-webkit-scrollbar {
 
     #aboutMeMain {
 
-        padding: 50px;
+       
         display: flex;
         margin-top: 100px;
     }
@@ -1025,13 +1025,13 @@ body::-webkit-scrollbar {
 
     #introductionAboutme label {
         font-family: 'Akaya Kanadaka';
-        font-size: 50px;
+        
         width: 100%;
     }
 
     #introductionAboutme p {
         font-family: 'Poppins';
-        font-size: 15px;
+        
         margin-bottom: -7px;
         width: 100%;
     }
