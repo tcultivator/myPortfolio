@@ -227,7 +227,12 @@ body::-webkit-scrollbar {
 
 
 
-
+#work1Desc span a{
+    color: white;
+    font-family: 'Poppins';
+    margin-left: 5px;
+    font-size: 12px;
+}
 
 
 
