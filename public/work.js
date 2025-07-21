@@ -40,8 +40,8 @@ document.getElementById('mobileNav').addEventListener('click', () => {
     navToggle = !navToggle
     console.log('zxc')
     navToggle ? (
-        line1.style.position = 'absolute',
-        line2.style.position = 'absolute',
+        line1.style.position = 'fixed',
+        line2.style.position = 'fixed',
         line1.style.transform = 'rotate(315deg)',
         line2.style.transform = 'rotate(225deg)',
         document.getElementById('navControl').style.bottom ='0',
