@@ -368,7 +368,7 @@ body::-webkit-scrollbar {
 
 .hidden #work1Desc {
     opacity: 0;
-    transform: translateX(200px);
+    transform: translateX(150%);
     transition: opacity 0.8s ease-out, transform 0.5s ease-in;
 }
 
