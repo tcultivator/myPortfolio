@@ -3,13 +3,16 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="demoport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="public/work.css">
     <script defer src="public/work.js"></script>
     <script src="https://kit.fontawesome.com/2820820f6e.js" crossorigin="anonymous"></script>
     <link href='https://fonts.googleapis.com/css?family=Righteous' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Akaya Kanadaka' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Anton' rel='stylesheet'>
+
     <title>LP</title>
 </head>
 
@@ -29,12 +32,12 @@
                 <label></label>
             </div>
             <div id="resumeBtn">
-                 <a href="https://drive.google.com/file/d/1XuLLWt--a9P6kpBWgLpvM3CJZXmAMo9_/view?usp=sharing"
+                <a href="https://drive.google.com/file/d/1XuLLWt--a9P6kpBWgLpvM3CJZXmAMo9_/demo?usp=sharing"
                     target="_blank">Resume</a>
                 <label></label>
             </div>
         </div>
-         <div id="mobileNav">
+        <div id="mobileNav">
             <label id="line1"></label>
             <label id="line2"></label>
         </div>
@@ -42,39 +45,95 @@
 
 
 
-    <div id="frontTextBody">
+    <div id="frontTextBody" class="hidden">
         <div id="frontText">
             <label>WEB</label>
             <label>DEVELOPER</label>
         </div>
+
         <div id="subText">
-            <p>Crafting responsive and user-friendly web applications.</p>
-            <p> Skilled in HTML, CSS, JavaScript, React, and Node.js.</p>
-            <p>Driven by a passion for building clean interfaces and seamless digital experiences.</p>
-            <p>Let's create something meaningful, together.</p>
+            <p>I build modern, responsive web applications that prioritize performance and user experience.</p>
+
+            <p>I enjoy transforming complex problems into intuitive, scalable digital solutions.</p>
+            <p>Actively seeking opportunities to contribute, learn, and create real-world impact.</p>
         </div>
     </div>
 
 
+
     <div id="worksBody">
-        <div id="work1">
-            <img src="assets/instagramCloneWork.png" alt="">
+        <div id="work1" class="hidden">
+            <div id="work1Image">
+                <img src="assets/iPhone-13-PRO-overclockedx-client.vercel.app.png" alt="">
+            </div>
             <div id="work1Desc">
-                <label for="">Instagram Clone <span><a
-                            href="https://tcultivator.github.io/instagramClone-DevelopmentPhaseV2/">view<i
+                <label for="">OverClockedX ~ E-commerce Platform<span><a href="https://overclockedx-client.vercel.app/"
+                            target="_blank">demo<i class="fa-solid fa-link"></i></a></span></label>
+                <p>OverClockedX is an e-commerce platform built using Next.js, designed for purchasing computers,
+                    laptops, computer parts, peripherals, and related hardware. The platform features an integrated AI
+                    assistant that helps users check component compatibility and provides relevant product information
+                    to support informed purchasing decisions. With a responsive layout and a clean, user-friendly
+                    interface, OverClockedX delivers a smooth and seamless shopping experience across all devices.
+                </p>
+            </div>
+        </div>
+
+        <div id="work2" class="hidden">
+            <div id="work2Desc">
+                <label for="">OverClockedX Admin ~ E-commerce Management Dashboard<span><a
+                            href="https://overclockedx-admin.vercel.app/" target="_blank">demo<i
                                 class="fa-solid fa-link"></i></a></span></label>
-                <p>A responsive Instagram replica built with HTML, CSS, JavaScript, and Node.js. Includes
-                    authentication, email verification, posts, likes, comments, stories, and profile editing.</p>
+                <p>
+                    OverClockedX Admin is an administrative dashboard built with Next.js for the OverClockedX e-commerce
+                    platform. It provides tools for managing products, orders, promotions, and sales analytics. The
+                    application emphasizes clean UI design, responsive layouts, and efficient data handling, enabling
+                    administrators to manage day-to-day store operations and make data-driven decisions seamlessly.
+                </p>
+            </div>
+            <div id="work2Image">
+                <img src="assets/Macbook-Air-overclockedx-admin.vercel.app.png" alt="">
+            </div>
+
+        </div>
+
+
+        <div id="work1" class="hidden">
+            <img src="assets/windowsxp-portfolio.png" alt="">
+            <div id="work1Desc">
+                <label for="">Windows XP Inspired Interactive Portfolio<span><a href="https://lpxp.vercel.app/"
+                            target="_blank">demo<i class="fa-solid fa-link"></i></a></span></label>
+                <p>
+                    A creative portfolio project inspired by the classic Windows XP operating system, built with
+                    Next.js. The application recreates familiar desktop elements such as draggable windows, taskbar
+                    interactions, and system-style navigation to deliver a nostalgic yet modern web experience. This
+                    project demonstrates strong front-end fundamentals, component-based architecture, and advanced UI
+                    state management using modern React patterns.
+                </p>
             </div>
         </div>
 
 
-        <div id="work1">
+        <div id="work1" class="hidden">
+            <img src="assets/instagramCloneWork.png" alt="">
+            <div id="work1Desc">
+                <label for="">Instagram Clone <span><a
+                            href="https://tcultivator.github.io/instagramClone-DevelopmentPhaseV2/"
+                            target="_blank">demo<i class="fa-solid fa-link"></i></a></span></label>
+                <p>Instagram Clone is a responsive social media application built with vanilla JavaScript, HTML, CSS,
+                    and Node.js. The platform includes full authentication with email verification, the ability to
+                    create posts, like and comment on posts, view stories, and edit user profiles. This project
+                    demonstrates hands-on experience with DOM manipulation, client-server communication, and building a
+                    fully functional web application without using frameworks.
+                </p>
+            </div>
+        </div>
+
+
+        <div id="work1" class="hidden">
             <img src="assets/jobappmanagerWork.png" alt="">
             <div id="work1Desc">
-                <label for="">Job Applying Manager <span><a
-                            href="https://tcultivator.github.io/Job-Applying-Manager/">view<i
-                                class="fa-solid fa-link"></i></a></span></label>
+                <label for="">Job Applying Manager <span><a href="https://tcultivator.github.io/Job-Applying-Manager/"
+                            target="_blank">demo<i class="fa-solid fa-link"></i></a></span></label>
                 <p>A simple tool that helps you organize and track your job applications. Easily monitor the companies
                     you've applied to, update the status of each application, and stay on top of your job hunt.</p>
             </div>
@@ -82,23 +141,24 @@
 
 
 
-        <div id="work1">
+        <div id="work1" class="hidden">
             <img src="assets/bankappwork.png" alt="">
             <div id="work1Desc">
                 <label for="">Bank Application <span><a
-                            href="https://tcultivator.github.io/LoginSystem-with-httpOnly-Cookie-and-JWT/loginPage.html">view<i
-                                class="fa-solid fa-link"></i></a></span></label>
-                <p>A web-based banking app that lets users create accounts, manage balances, view transaction history,
+                            href="https://tcultivator.github.io/LoginSystem-with-httpOnly-Cookie-and-JWT/loginPage.html"
+                            target="_blank">demo<i class="fa-solid fa-link"></i></a></span></label>
+                <p>A web-based banking app that lets users create accounts, manage balances, demo transaction history,
                     and perform basic banking operations</p>
             </div>
         </div>
 
 
 
-        <div id="work1">
+        <div id="work1" class="hidden">
             <img src="assets/mp3playerv2work.png" alt="">
             <div id="work1Desc">
-                <label for="">Mp3 Player v.2 <span><a href="https://tcultivator.github.io/Improve-Mp3Player/">view<i class="fa-solid fa-link"></i></a></span></label>
+                <label for="">Mp3 Player v.2 <span><a href="https://tcultivator.github.io/Improve-Mp3Player/"
+                            target="_blank">demo<i class="fa-solid fa-link"></i></a></span></label>
                 <p>A sleek and responsive music player that lets users play, pause, skip tracks, and manage playlists —
                     built for smooth audio playback and a clean user interface.</p>
             </div>
@@ -106,21 +166,25 @@
 
 
 
-        <div id="work1">
+        <div id="work1" class="hidden">
             <img src="assets/mp3playerv1work.png" alt="">
             <div id="work1Desc">
-                <label for="">Mp3 Player v.1 <span><a href="https://tcultivator.github.io/MP3PLAYER/">view<i class="fa-solid fa-link"></i></a></span></label>
+                <label for="">Mp3 Player v.1 <span><a href="https://tcultivator.github.io/MP3PLAYER/"
+                            target="_blank">demo<i class="fa-solid fa-link"></i></a></span></label>
                 <p>A basic MP3 player that allows users to play, pause, and skip audio tracks — built with a focus on
                     simplicity and smooth playback.</p>
             </div>
         </div>
 
 
-         <div id="work1">
+        <div id="work1" class="hidden">
             <img src="assets/calculatorwork.png" alt="">
             <div id="work1Desc">
-                <label for="">Calculator <span><a href="https://tcultivator.github.io/Calculator/">view<i class="fa-solid fa-link"></i></a></span></label>
-                <p>A simple and user-friendly calculator app that handles basic arithmetic operations like addition, subtraction, multiplication, and division. Designed for quick calculations with a clean interface and responsive design.</p>
+                <label for="">Calculator <span><a href="https://tcultivator.github.io/Calculator/"
+                            target="_blank">demo<i class="fa-solid fa-link"></i></a></span></label>
+                <p>A simple and user-friendly calculator app that handles basic arithmetic operations like addition,
+                    subtraction, multiplication, and division. Designed for quick calculations with a clean interface
+                    and responsive design.</p>
             </div>
         </div>
     </div>
@@ -142,7 +206,7 @@
                 <label for="">Navigation</label>
                 <a href="index.html">Work</a>
                 <a href="public/about.html">About</a>
-                 <a href="https://drive.google.com/file/d/1XuLLWt--a9P6kpBWgLpvM3CJZXmAMo9_/view?usp=sharing"
+                <a href="https://drive.google.com/file/d/1XuLLWt--a9P6kpBWgLpvM3CJZXmAMo9_/demo?usp=sharing"
                     target="_blank">Resume</a>
             </div>
         </div>
@@ -150,7 +214,7 @@
     </div>
 
 
-    <div id="backtoTop" >
+    <div id="backtoTop">
         <a id="gototop"><i class="fa-solid fa-square-caret-up"></i></a>
     </div>
 
