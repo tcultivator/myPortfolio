@@ -4,65 +4,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="public/index.css">
-    <script defer src="public/work.js"></script>
-    <script src="https://kit.fontawesome.com/2820820f6e.js" crossorigin="anonymous"></script>
-    <link href='https://fonts.googleapis.com/css?family=Righteous' rel='stylesheet'>
-    <link href='https://fonts.googleapis.com/css?family=Akaya Kanadaka' rel='stylesheet'>
-    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <title>Luigie | Web Developer</title>
+    <!-- Modern Fonts & Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;800&family=Orbitron:wght@700&display=swap"
+        rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Anton' rel='stylesheet'>
-
-    <title>LP</title>
+    <link rel="stylesheet" href="public/index.css">
 </head>
 
 <body>
 
+    <div class="glass-background"></div>
+
     <nav id="headerNav">
         <div id="logo">
-            <label id="homeBtn">LP</label>
+            <label id="homeBtn" onclick="window.location.reload()">LP<span>.</span></label>
         </div>
+
         <div id="navControl">
-            <div id="workBtn">
-                <a href="index.html">Works</a>
-                <label></label>
-            </div>
-            <div id="aboutBtn">
-                <a href="public/about.html">About</a>
-                <label></label>
-            </div>
-            <div id="resumeBtn">
-                <a href="https://drive.google.com/file/d/1XuLLWt--a9P6kpBWgLpvM3CJZXmAMo9_/demo?usp=sharing"
-                    target="_blank">Resume</a>
-                <label></label>
-            </div>
+            <a href="/myPortfolio/index.html">Works</a>
+            <a href="/myPortfolio/public/about.html">About</a>
+            <a href="https://drive.google.com/..." target="_blank" class="resume-btn">Resume</a>
         </div>
+
+        <!-- The Menu Button -->
         <div id="mobileNav">
-            <label id="line1"></label>
-            <label id="line2"></label>
+            <span id="line1"></span>
+            <span id="line2"></span>
         </div>
     </nav>
 
-
-
-    <div id="frontTextBody" class="hidden">
-        <div id="frontText">
-            <label>WEB</label>
-            <label>DEVELOPER</label>
+    <header id="hero" class="hidden">
+        <div class="hero-content">
+            <h1 class="glitch-text">WEB<br>DEVELOPER</h1>
+            <div class="sub-text">
+                <p>I build <span>modern</span>, <span>responsive</span> applications with a focus on
+                    <span>performance</span> and
+                    <span>user experience.</span>.
+                </p>
+                <p>Turning complex problems into <span>scalable digital solutions.</span> </p>
+            </div>
+            <div class="scroll-indicator">
+                <div class="mouse"></div>
+            </div>
         </div>
+    </header>
 
-        <div id="subText">
-            <p>I build modern, responsive web applications that prioritize performance and user experience.</p>
-
-            <p>I enjoy transforming complex problems into intuitive, scalable digital solutions.</p>
-            <p>Actively seeking opportunities to contribute, learn, and create real-world impact.</p>
-        </div>
-    </div>
-
-
-    <div class="tech-ticker">
+    <!-- Tech Ticker -->
+    <section class="tech-ticker">
         <div class="ticker-track">
-
             <!-- SET 1 -->
             <div class="tech-item">
                 <div class="logo-box">
@@ -232,215 +225,195 @@
                     <img src="./assets/techStack/Postman_(software).png" alt="Postman">
                 </div>
             </div>
-
-
         </div>
-    </div>
+    </section>
 
-
-
-    <div id="worksBody">
-        <div id="work1" class="hidden">
-            <div id="work1Image">
-                <img src="assets/Macbook-Air-overclockedx-client.vercel.app.png" alt="">
+    <main id="worksBody">
+        <!-- 01. OverClockedX -->
+        <div class="work-card hidden">
+            <div class="work-image">
+                <img src="assets/Macbook-Air-overclockedx-client.vercel.app.png" alt="OverClockedX">
             </div>
-            <div id="work1Desc">
-                <label for="">OverClockedX ~ E-commerce Platform</label>
-                <p>OverClockedX is an e-commerce platform built using Next.js, designed for purchasing computers,
-                    laptops, computer parts, peripherals, and related hardware. The platform features an integrated AI
-                    assistant that helps users check component compatibility and provides relevant product information
-                    to support informed purchasing decisions. With a responsive layout and a clean, user-friendly
-                    interface, OverClockedX delivers a smooth and seamless shopping experience across all devices.
-                </p>
-                <span><a href="https://overclockedx-client.vercel.app/" target="_blank">demo<i
-                            class="fa-solid fa-link"></i></a></span>
+            <div class="work-desc">
+                <span class="work-tag">Next.js + AI + Tailwind</span>
+                <h2>OverClockedX</h2>
+                <p>OverClockedX is a e-commerce platform for computers and hardware, featuring an AI assistant
+                    for compatibility checks and product info, with a responsive, user-friendly design for seamless
+                    shopping.</p>
+                <a href="https://overclockedx-client.vercel.app/" target="_blank" class="demo-link">Demo <i
+                        class="fa-solid fa-link"></i></a>
             </div>
         </div>
 
-        <div id="work2" class="hidden">
-            <div id="work2Desc">
-                <label for="">OverClockedX Admin ~ E-commerce Management Dashboard</label>
-                <p>
-                    OverClockedX Admin is an administrative dashboard built with Next.js for the OverClockedX e-commerce
-                    platform. It provides tools for managing products, orders, promotions, and sales analytics. The
-                    application emphasizes clean UI design, responsive layouts, and efficient data handling, enabling
-                    administrators to manage day-to-day store operations and make data-driven decisions seamlessly.
-                </p>
-                <span><a href="https://overclockedx-admin.vercel.app/" target="_blank">demo<i
-                            class="fa-solid fa-link"></i></a></span>
+        <!-- 02. OverClockedX Admin -->
+        <div class="work-card hidden rev">
+            <div class="work-image">
+                <img src="assets/Macbook-Air-overclockedx-admin.vercel.app.png" alt="Admin Dashboard">
             </div>
-            <div id="work2Image">
-                <img src="assets/Macbook-Air-overclockedx-admin.vercel.app.png" alt="">
-            </div>
-
-        </div>
-
-
-        <div id="work1" class="hidden">
-            <div id="work1Image">
-                <img src="assets/Macbook-Air-lpxp.vercel.app.png" alt="">
-            </div>
-
-            <div id="work1Desc">
-                <label for="">Windows XP Inspired Interactive Portfolio</label>
-                <p>
-                    A creative portfolio project inspired by the classic Windows XP operating system, built with
-                    Next.js. The application recreates familiar desktop elements such as draggable windows, taskbar
-                    interactions, and system-style navigation to deliver a nostalgic yet modern web experience. This
-                    project demonstrates strong front-end fundamentals, component-based architecture, and advanced UI
-                    state management using modern React patterns.
-                </p>
-                <span><a href="https://lpxp.vercel.app/" target="_blank">demo<i class="fa-solid fa-link"></i></a></span>
+            <div class="work-desc">
+                <span class="work-tag">Next.js + Shadcn + Tailwind</span>
+                <h2>OverClocked Admin</h2>
+                <p>OverClockedX Admin is a custom dashboard for managing products, orders, promotions, and analytics,
+                    featuring a clean, responsive UI for efficient store management.</p>
+                <a href="https://overclockedx-admin.vercel.app/" target="_blank" class="demo-link">Demo <i
+                        class="fa-solid fa-link"></i></a>
             </div>
         </div>
 
-
-        <div id="work2" class="hidden">
-            <div id="work2Desc">
-                <label for="">Instagram Clone </label>
-                <p>Instagram Clone is a responsive social media application built with vanilla JavaScript, HTML, CSS,
-                    and Node.js. The platform includes full authentication with email verification, the ability to
-                    create posts, like and comment on posts, view stories, and edit user profiles. This project
-                    demonstrates hands-on experience with DOM manipulation, client-server communication, and building a
-                    fully functional web application without using frameworks.
-                </p>
-                <span><a href="https://tcultivator.github.io/instagramClone-DevelopmentPhaseV2/" target="_blank">demo<i
-                            class="fa-solid fa-link"></i></a></span>
+        <!-- 03. Windows XP Portfolio -->
+        <div class="work-card hidden">
+            <div class="work-image">
+                <img src="assets/Macbook-Air-lpxp.vercel.app.png" alt="Windows XP Portfolio">
             </div>
-            <div id="work2Image">
-                <img src="assets/Macbook-Air-tcultivator.github.io.png" alt="">
+            <div class="work-desc">
+                <span class="work-tag">Next.js + Tailwind</span>
+                <h2>Windows XP Interactive</h2>
+                <p>A nostalgic interactive portfolio recreating the classic XP desktop experience. Features draggable
+                    windows, a functional taskbar, and system sound effects.</p>
+                <a href="https://lpxp.vercel.app/" target="_blank" class="demo-link">Demo <i
+                        class="fa-solid fa-link"></i></a>
             </div>
-
-
         </div>
 
-
-        <div id="work1" class="hidden">
-            <div id="work1Image">
-                <img src="assets/Macbook-Air-127.0.0.1.png" alt="">
+        <!-- 04. Instagram Clone -->
+        <div class="work-card hidden rev">
+            <div class="work-image">
+                <img src="assets/Macbook-Air-tcultivator.github.io.png" alt="Instagram Clone">
             </div>
+            <div class="work-desc">
+                <span class="work-tag">Vanilla JS + Node.js</span>
+                <h2>Instagram Clone</h2>
+                <p>A full-stack social media clone. Includes user authentication, image uploads, real-time commenting,
+                    and "Stories" functionality using vanilla JavaScript.</p>
+                <a href="https://tcultivator.github.io/instagramClone-DevelopmentPhaseV2/" target="_blank"
+                    class="demo-link">Demo <i class="fa-solid fa-link"></i></a>
+            </div>
+        </div>
 
-            <div id="work1Desc">
-                <label for="">Job Applying Manager </label>
+        <!-- 05. Job Applying Manager -->
+        <div class="work-card hidden">
+            <div class="work-image">
+                <img src="assets/Macbook-Air-127.0.0.1.png" alt="Job Manager">
+            </div>
+            <div class="work-desc">
+                <span class="work-tag">Vanilla JS + Node.js</span>
+                <h2>Job Manager</h2>
                 <p>A simple tool that helps you organize and track your job applications. Easily monitor the companies
-                    you've applied to, update the status of each application, and stay on top of your job hunt.
-                </p>
-                <span><a href="https://tcultivator.github.io/Job-Applying-Manager/" target="_blank">demo<i
-                            class="fa-solid fa-link"></i></a>
-                </span>
+                    you've applied to, update the status of each application, and stay on top of your job hunt.</p>
+                <a href="https://tcultivator.github.io/Job-Applying-Manager/" target="_blank" class="demo-link">Demo <i
+                        class="fa-solid fa-link"></i></a>
             </div>
         </div>
 
-
-
-        <div id="work2" class="hidden">
-            <div id="work2Desc">
-                <label for="">Bank Application </label>
+        <!-- 06. Bank Application -->
+        <div class="work-card hidden rev">
+            <div class="work-image">
+                <img src="assets/Macbook-Air-127.0.0.1 (1).png" alt="Bank App">
+            </div>
+            <div class="work-desc">
+                <span class="work-tag">Vanilla JS + Node.js</span>
+                <h2>Bank App</h2>
                 <p>A web-based banking app that lets users create accounts, manage balances, demo transaction history,
-                    and perform basic banking operations
-                </p>
-                <span><a href="https://tcultivator.github.io/LoginSystem-with-httpOnly-Cookie-and-JWT/loginPage.html"
-                        target="_blank">demo<i class="fa-solid fa-link"></i></a>
-                </span>
+                    and perform basic banking operations</p>
+                <a href="https://tcultivator.github.io/LoginSystem-with-httpOnly-Cookie-and-JWT/loginPage.html"
+                    target="_blank" class="demo-link">Demo <i class="fa-solid fa-link"></i></a>
             </div>
-            <div id="work2Image">
-                <img src="assets/Macbook-Air-127.0.0.1 (1).png" alt="">
-            </div>
-
-
         </div>
 
-
-
-        <div id="work1" class="hidden">
-            <div id="work1Image">
-                <img src="assets/mp3playerv2work.png" alt="">
+        <!-- 07. Mp3 Player v.2 -->
+        <div class="work-card hidden">
+            <div class="work-image">
+                <img src="assets/Macbook-Air-127.0.0.1 (6).png" alt="Mp3 v2">
             </div>
-
-            <div id="work1Desc">
-                <label for="">Mp3 Player v.2 </label>
+            <div class="work-desc">
+                <span class="work-tag">Html + Css + JavaScript</span>
+                <h2>Mp3 Player v.2</h2>
                 <p>A sleek and responsive music player that lets users play, pause, skip tracks, and manage playlists —
                     built for smooth audio playback and a clean user interface.</p>
-                <span><a href="https://tcultivator.github.io/Improve-Mp3Player/" target="_blank">demo<i
-                            class="fa-solid fa-link"></i></a></span>
+                <a href="https://tcultivator.github.io/Improve-Mp3Player/" target="_blank" class="demo-link">Demo <i
+                        class="fa-solid fa-link"></i></a>
             </div>
         </div>
 
-
-
-        <div id="work2" class="hidden">
-            <div id="work2Desc">
-                <label for="">Mp3 Player v.1 </label>
+        <!-- 08. Mp3 Player v.1 -->
+        <div class="work-card hidden rev">
+            <div class="work-image">
+                <img src="assets/Macbook-Air-127.0.0.1 (5).png" alt="Mp3 v1">
+            </div>
+            <div class="work-desc">
+                <span class="work-tag">Html + Css + JavaScript</span>
+                <h2>Mp3 Player v.1</h2>
                 <p>A basic MP3 player that allows users to play, pause, and skip audio tracks — built with a focus on
                     simplicity and smooth playback.</p>
-                <span><a href="https://tcultivator.github.io/MP3PLAYER/" target="_blank">demo<i
-                            class="fa-solid fa-link"></i></a></span>
+                <a href="https://tcultivator.github.io/MP3PLAYER/" target="_blank" class="demo-link">Demo <i
+                        class="fa-solid fa-link"></i></a>
             </div>
-            <div id="work2Image">
-                <img src="assets/mp3playerv1work.png" alt="">
-            </div>
-
-
         </div>
 
-
-        <div id="work1" class="hidden">
-            <div id="work1Image">
-                <img src="assets/calculatorwork.png" alt="">
+        <!-- 09. Calculator -->
+        <div class="work-card hidden">
+            <div class="work-image">
+                <img src="assets/Macbook-Air-127.0.0.1 (7).png" alt="Calculator">
             </div>
-
-            <div id="work1Desc">
-                <label for="">Calculator </label>
+            <div class="work-desc">
+                <span class="work-tag">Html + Css + JavaScript</span>
+                <h2>Calculator</h2>
                 <p>A simple and user-friendly calculator app that handles basic arithmetic operations like addition,
                     subtraction, multiplication, and division. Designed for quick calculations with a clean interface
                     and responsive design.</p>
-                <span><a href="https://tcultivator.github.io/Calculator/" target="_blank">demo<i
-                            class="fa-solid fa-link"></i></a></span>
+                <a href="https://tcultivator.github.io/Calculator/" target="_blank" class="demo-link">Demo <i
+                        class="fa-solid fa-link"></i></a>
             </div>
         </div>
-    </div>
-
+    </main>
 
     <footer class="footer">
         <div class="footer-container">
-
-            <!-- Footer Brand / Message -->
+            <!-- Brand Section -->
             <div class="footer-brand">
-                <h2>Thanks for stopping by! ❤️</h2>
-                <p>Fueled by curiosity, caffeine, dreams, and a stubborn “just one more line of code.”</p>
-                <p class="copyright">Luigie © 2026</p>
+                <h2 class="logo">LP<span>.</span></h2>
+                <p>Building high-performance web applications with a focus on user experience and clean code.</p>
+                <div class="footer-socials">
+                    <a href="#"><i class="fa-brands fa-github"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="footer-group">
+                <h3>Explore</h3>
+                <ul class="footer-links">
+                    <li><a href="/myPortfolio/index.html">Works</a></li>
+                    <li><a href="/myPortfolio/public/about.html">About Me</a></li>
+                </ul>
             </div>
 
             <!-- Contact Section -->
-            <div class="footer-section">
-                <h3>Contact Me</h3>
-                <a href="mailto:lpanahon06@gmail.com" class="footer-link">Email</a>
-                <a href="https://www.linkedin.com/in/luigie-panahon-541733367/" target="_blank"
-                    class="footer-link">LinkedIn</a>
+            <div class="footer-group">
+                <h3>Contact</h3>
+                <ul class="footer-links">
+                    <li><a href="mailto:lpanahon06@gmail.com">lpanahon06@gmail.com</a></li>
+                    <li>
+                        <p>Nueva Ecija, Philippines</p>
+                    </li>
+                    <li><a href="#" class="status-badge">Available for Hire</a></li>
+                </ul>
             </div>
-
-            <!-- Navigation Section -->
-            <div class="footer-section">
-                <h3>Navigation</h3>
-                <a href="../index.html" class="footer-link">Work</a>
-                <a href="about.html" class="footer-link">About</a>
-                <a href="https://drive.google.com/file/d/1XuLLWt--a9P6kpBWgLpvM3CJZXmAMo9_/view?usp=sharing"
-                    target="_blank" class="footer-link">Resume</a>
-            </div>
-
         </div>
 
-        <!-- Footer Bottom Line -->
+        <!-- Bottom Copyright -->
         <div class="footer-bottom">
-            <p>Made with by Luigie | 2026</p>
+            <p>Copyright &copy; 2026 Luigie Panahon. All rights reserved.</p>
+            <div class="footer-legal">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
         </div>
     </footer>
 
-
-    <div id="backtoTop">
-        <a id="gototop"><i class="fa-solid fa-square-caret-up"></i></a>
-    </div>
-
+    <button id="backtoTop"><i class="fa-solid fa-arrow-up"></i></button>
+    <script src="public/work.js"></script>
 </body>
 
 </html>

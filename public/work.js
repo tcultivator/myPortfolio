@@ -1,80 +1,52 @@
-
-const observer = new IntersectionObserver((entries)=>{
-    entries.forEach((entry)=>{
-        if(entry.isIntersecting){
-            entry.target.classList.add('show')
-            console.log('this is show')
-        }else{
-            entry.target.classList.remove('show')
-            console.log('this is hidden')
-        }
-    })
-})
-
-
-const hiddenElements = document.querySelectorAll('.hidden')
-hiddenElements.forEach((el) => observer.observe(el));
-
-
-
-
-
-const gototop = document.getElementById('gototop')
-
-gototop.addEventListener('click', () => {
-    console.log('zxczxczxczxcxzc')
-    window.scrollTo({
-        top: 0,
-        behavior: 'smooth'
-    })
-})
-
-
-window.onscroll = function () {
-    const btn = document.getElementById('gototop');
-
-    if (document.documentElement.scrollTop > 400) {
-        btn.style.bottom = '20px';
-        btn.style.opacity = '1';        
-        
-    } else {
-        btn.style.bottom = '-60px';      
-        btn.style.opacity = '0';         
-        
-    }
+// 1. Smooth Scroll Fade-in
+const observerOptions = {
+    threshold: 0.5
 };
 
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('show');
+            entry.target.classList.remove('hidden');
+        }else{
+            entry.target.classList.add('hidden');
+            entry.target.classList.remove('show')
+        }
+    });
+}, observerOptions);
 
-document.getElementById('homeBtn').addEventListener('click',()=>{
-    window.location.replace('index.html')
-    console.log('')
-})
+document.querySelectorAll('.hidden').forEach(el => observer.observe(el));
 
+// 2. Back to Top Button
+const backToTop = document.getElementById('backtoTop');
 
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 500) {
+        backToTop.classList.add('visible');
+    } else {
+        backToTop.classList.remove('visible');
+    }
+});
 
-const line1 = document.getElementById('line1')
-const line2 = document.getElementById('line2')
-let navToggle = false;
-document.getElementById('mobileNav').addEventListener('click', () => {
-    navToggle = !navToggle
-    console.log('zxc')
-    navToggle ? (
-        line1.style.position = 'fixed',
-        line2.style.position = 'fixed',
-        line1.style.transform = 'rotate(315deg)',
-        line2.style.transform = 'rotate(225deg)',
-        document.getElementById('navControl').style.bottom ='0',
-        document.getElementById('navControl').style.opacity ='1'
+backToTop.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+});
 
-    ) : (
+const mobileNav = document.getElementById('mobileNav');
+const navControl = document.getElementById('navControl');
 
-        line1.style.transform = 'rotate(0deg)',
-        line2.style.transform = 'rotate(0deg)',
-        line1.style.position = 'relative',
-        line2.style.position = 'relative',
-        document.getElementById('navControl').style.bottom ='-100%',
-        document.getElementById('navControl').style.opacity ='.5'
+mobileNav.addEventListener('click', () => {
+    // Toggle the 'open' class for the hamburger animation
+    mobileNav.classList.toggle('open');
+    
+    // Toggle the 'active' class to slide the menu in
+    navControl.classList.toggle('active');
+});
 
-    )
-
-})
+// Close menu when a link is clicked
+document.querySelectorAll('#navControl a').forEach(link => {
+    link.addEventListener('click', () => {
+        mobileNav.classList.remove('open');
+        navControl.classList.remove('active');
+    });
+});
