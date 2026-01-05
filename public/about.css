@@ -1,7 +1,7 @@
 body {
     padding: 0;
     margin: 0;
-    background-color: rgb(36, 36, 36);
+    background: linear-gradient(180deg, #071421 0%, #03101a 100%);
     display: flex;
     flex-direction: column;
     overflow: auto;
@@ -28,33 +28,41 @@ body::-webkit-scrollbar {
 
 #navControl {
     display: flex;
-    font-family: 'Righteous';
+    font-family: 'Orbitron';
     justify-content: center;
     gap: 40px;
+
 }
 
 #navControl a {
     text-decoration: none;
     color: white;
-    font-size: 20px;
+    font-size: 15px;
 }
 
 #logo {
     color: white;
-
-    font-family: 'Akaya Kanadaka';
-    font-size: 30px;
+    font-family: 'Orbitron';
+    font-size: 20px;
 }
 
 #logo label {
     cursor: pointer;
-    font-size: 30px;
+    font-size: 20px;
+
 }
+
+
+
+
+
 
 #aboutBtn {
     display: flex;
     flex-direction: column;
     width: fit-content;
+
+
 }
 
 #aboutBtn label {
@@ -129,7 +137,6 @@ body::-webkit-scrollbar {
 
 
 
-
 #aboutMeMain {
 
     padding: 50px;
@@ -172,6 +179,78 @@ body::-webkit-scrollbar {
     max-width: 454px;
 }
 
+
+
+
+
+#frontTextBody {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5%;
+    color: white;
+}
+
+#frontText {
+    margin: auto;
+    text-align: center;
+    font-family: 'Anton';
+    line-height: 1;
+    font-size: 110px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+#subText {
+    text-align: center;
+    font-family: 'Poppins';
+    font-size: 14px;
+    line-height: 2;
+
+}
+
+
+/* test scroll animation */
+.hidden #frontText {
+    opacity: 0;
+    transition: all 1s;
+}
+
+.show #frontText {
+    opacity: 1;
+}
+
+.hidden #subText :nth-child(1) {
+    opacity: 0;
+    transition: all 1s;
+    transition-delay: 1s;
+}
+
+.show #subText :nth-child(1) {
+    opacity: 1;
+}
+
+.hidden #subText :nth-child(2) {
+    opacity: 0;
+    transition: all 1s;
+    transition-delay: 1.5s;
+}
+
+.show #subText :nth-child(2) {
+    opacity: 1;
+}
+
+.hidden #subText :nth-child(3) {
+    opacity: 0;
+    transition: all 1s;
+    transition-delay: 2s;
+}
+
+.show #subText :nth-child(3) {
+    opacity: 1;
+}
 
 
 
@@ -258,66 +337,8 @@ body::-webkit-scrollbar {
 
 
 
-#achievementsBody {
-    width: 100%;
-    box-sizing: border-box;
-    display: flex;
-    margin-top: 100px;
-    padding: 50px;
-}
-
-#achievementsContents {
-    margin: auto;
-    max-width: 1319px;
-    width: 100%;
-    color: white;
-}
-
-#achievementsContents label {
-    font-family: 'Sarpanch';
-    font-size: 30px;
-    color: #CCCCCC;
-    margin: 0 10px;
-}
-
-#achievementsContents p {
-    font-family: 'Poppins';
-    font-size: 15px;
-    margin: 0 10px 10px 10px;
-
-}
-
-#achievementsContents img {
-    width: 100%;
-    max-width: 1319px;
-}
 
 
-
-
-
-
-#imgControl {
-    margin: auto;
-    width: 100%;
-    padding: 10px;
-    font-size: 10px;
-    display: flex;
-    justify-content: center;
-    gap: 5px;
-}
-
-
-#imgControl i {
-    color: rgb(114, 114, 114);
-    cursor: pointer;
-    margin: 5px;
-    transition: 0.2s;
-}
-
-#imgControl i.active {
-    color: white;
-}
 
 
 
@@ -361,95 +382,6 @@ body::-webkit-scrollbar {
 
 
 
-/*footer*/
-
-#footer {
-    border-top: 1px solid white;
-    margin-top: 5%;
-    padding: 3%;
-    display: flex;
-}
-
-#footerContent {
-    max-width: 1319px;
-    display: flex;
-    color: white;
-    margin: auto;
-    width: 100%;
-
-}
-
-#footerMessage {
-    width: 70%;
-}
-
-#footerMessage label {
-    font-family: 'Akaya Kanadaka';
-    font-size: 50px;
-}
-
-#footerMessage p {
-    font-family: 'Poppins';
-    font-size: 20px;
-    font-style: italic;
-}
-
-#contact {
-    width: 15%;
-    display: flex;
-    flex-direction: column;
-}
-
-#contact label {
-    font-size: 20px;
-    font-family: 'Righteous';
-    margin-bottom: 5px;
-}
-
-#contact a {
-    color: white;
-    font-style: italic;
-    font-size: 20px;
-    font-family: 'Poppins';
-}
-
-#contact a:hover {
-    color: rgb(175, 175, 175);
-
-}
-
-
-
-
-
-
-
-
-
-
-#footerNav {
-    width: 15%;
-    display: flex;
-    flex-direction: column;
-}
-
-#footerNav label {
-    font-size: 20px;
-    font-family: 'Righteous';
-    margin-bottom: 5px;
-}
-
-#footerNav a {
-    color: white;
-    font-style: italic;
-    font-size: 20px;
-    font-family: 'Poppins';
-}
-
-#footerNav a:hover {
-    color: rgb(175, 175, 175);
-
-}
 
 
 
@@ -466,22 +398,40 @@ body::-webkit-scrollbar {
 
 #backtoTop a {
     position: fixed;
-    right: 5px;
+    right: 14px;
     bottom: -60px;
-    padding: 10px 15px;
+    /* JS controls this value when visible */
+    padding: 14px 18px;
 
-    color: white;
+    color: #061022;
+    background: linear-gradient(90deg, #7c5cff, #31d0aa);
     border: none;
-    border-radius: 8px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(12, 18, 30, 0.6);
     cursor: pointer;
-    transition: bottom 0.3s ease, opacity 0.3s ease;
+    transition: bottom 0.28s cubic-bezier(.2, .9, .3, 1), opacity 0.28s ease, transform 0.2s ease;
     opacity: 0;
-    cursor: pointer;
+    z-index: 1200;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #backtoTop i {
-    font-size: 30px;
+    font-size: 38px;
     cursor: pointer;
+}
+
+@media (max-width:420px) {
+    #backtoTop a {
+        padding: 12px 14px;
+        right: 10px
+    }
+
+    #backtoTop i {
+        font-size: 32px
+    }
+
 }
 
 
@@ -494,7 +444,20 @@ body::-webkit-scrollbar {
 }
 
 @media (max-width:600px) {
-    body {}
+    
+
+    #work1Image,
+    #work2Image {
+        width: 100%;
+        aspect-ratio: auto;
+    }
+
+    #work1Desc,
+    #work2Desc {
+        width: 100%;
+        text-align: center;
+    }
+
 
     #headerNav {
         padding: 5px 10px;
@@ -509,7 +472,7 @@ body::-webkit-scrollbar {
         position: fixed;
         bottom: -100%;
         height: 100%;
-        background-color: rgb(36, 36, 36);
+        background: linear-gradient(180deg, rgba(5, 14, 53, 0.96), rgba(4, 8, 18, 0.95));
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -520,15 +483,7 @@ body::-webkit-scrollbar {
         opacity: .5;
         box-sizing: border-box;
         left: 0;
-
-    }
-
-    #navControl a {
-        font-size: 15px;
-    }
-
-    #navControl label {
-        height: 2px;
+        z-index: 999;
     }
 
     #mobileNav {
@@ -539,6 +494,7 @@ body::-webkit-scrollbar {
         position: absolute;
         right: 3%;
         top: 3%;
+        z-index: 999;
 
     }
 
@@ -564,75 +520,34 @@ body::-webkit-scrollbar {
 
 
 
+    /*mainContent*/
 
+    #frontTextBody {
 
-
-
-
-
-
-
-    #aboutMeMain {
-
-        padding: 10px;
-        display: flex;
-
-    }
-
-    #aboutmeContents {
-        margin: auto;
-        max-width: 1319px;
-        width: 100%;
-        text-align: left;
-        display: flex;
-        flex-direction: column-reverse;
-
-
-    }
-
-    #introductionAboutme {
-        color: white;
         display: flex;
         flex-direction: column;
-        gap: 0;
-        padding: 0;
-
-        margin-top: -40px;
+        align-items: center;
+        padding: 10px;
+        color: white;
     }
 
-    #introductionAboutme label {
-        font-family: 'Akaya Kanadaka';
-        font-size: 25px;
-        width: 100%;
+    #frontText {
+        margin: auto;
+        text-align: center;
+
+        font-size: 70px;
+        display: flex;
+        flex-direction: column;
+        margin-top: 80px;
+
     }
 
-    #introductionAboutme p {
+    #subText {
+        text-align: center;
         font-family: 'Poppins';
         font-size: 12px;
-        margin-bottom: -7px;
-        width: 100%;
+        line-height: normal;
     }
-
-    #imgBody {
-        width: 100%;
-
-    }
-
-    #imgBody img {
-        width: 100%;
-    }
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -837,97 +752,7 @@ body::-webkit-scrollbar {
 
 
 
-    /*footer*/
 
-    #footer {
-        border-top: 1px solid white;
-        margin-top: 5%;
-        padding: 10px;
-        display: flex;
-    }
-
-    #footerContent {
-        max-width: 1319px;
-        display: flex;
-        color: white;
-        margin: auto;
-        width: 100%;
-
-    }
-
-    #footerMessage {
-        width: 60%;
-    }
-
-    #footerMessage label {
-        font-family: 'Akaya Kanadaka';
-        font-size: 18px;
-    }
-
-    #footerMessage p {
-        font-family: 'Poppins';
-        font-size: 10px;
-        font-style: italic;
-    }
-
-    #contact {
-        width: 20%;
-        display: flex;
-        flex-direction: column;
-        margin-top: 6px;
-    }
-
-    #contact label {
-        font-size: 12px;
-        font-family: 'Righteous';
-        margin-bottom: 5px;
-    }
-
-    #contact a {
-        color: white;
-        font-style: italic;
-        font-size: 10px;
-        font-family: 'Poppins';
-    }
-
-    #contact a:hover {
-        color: rgb(175, 175, 175);
-
-    }
-
-
-
-
-
-
-
-
-
-
-    #footerNav {
-        width: 20%;
-        display: flex;
-        flex-direction: column;
-        margin-top: 6px;
-    }
-
-    #footerNav label {
-        font-size: 12px;
-        font-family: 'Righteous';
-        margin-bottom: 5px;
-    }
-
-    #footerNav a {
-        color: white;
-        font-style: italic;
-        font-size: 10px;
-        font-family: 'Poppins';
-    }
-
-    #footerNav a:hover {
-        color: rgb(175, 175, 175);
-
-    }
 
 
 
@@ -954,7 +779,7 @@ body::-webkit-scrollbar {
         position: fixed;
         bottom: -100%;
         height: 100%;
-        background-color: rgb(36, 36, 36);
+        background: linear-gradient(180deg, rgba(5, 14, 53, 0.96), rgba(4, 8, 18, 0.95));
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -965,6 +790,7 @@ body::-webkit-scrollbar {
         opacity: .5;
         box-sizing: border-box;
         left: 0;
+        z-index: 999;
     }
 
     #mobileNav {
@@ -975,6 +801,7 @@ body::-webkit-scrollbar {
         position: absolute;
         right: 3%;
         top: 3%;
+        z-index: 999;
 
     }
 
@@ -1001,7 +828,7 @@ body::-webkit-scrollbar {
 
     #aboutMeMain {
 
-       
+
         display: flex;
         margin-top: 100px;
     }
@@ -1025,13 +852,13 @@ body::-webkit-scrollbar {
 
     #introductionAboutme label {
         font-family: 'Akaya Kanadaka';
-        
+
         width: 100%;
     }
 
     #introductionAboutme p {
         font-family: 'Poppins';
-        
+
         margin-bottom: -7px;
         width: 100%;
     }
@@ -1039,4 +866,444 @@ body::-webkit-scrollbar {
     #imgBody {
         max-width: 454px;
     }
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#achievementsBody {
+    width: 100%;
+    padding: 80px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+#achievementsContents {
+    max-width: 1200px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 40px;
+    color: white;
+    align-items: center;
+}
+
+/* TEXT */
+.achievement-text h2 {
+    font-family: 'Orbitron';
+    font-size: 36px;
+    color: #e5e5e5;
+    margin-bottom: 15px;
+}
+
+.achievement-text p {
+    font-family: 'Poppins';
+    font-size: 15px;
+    line-height: 1.7;
+    color: #cccccc;
+}
+
+/* SLIDER */
+.slider {
+    position: relative;
+    width: 100%;
+}
+
+.slider img {
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+/* Fade animation */
+.slider img.fade {
+    opacity: 0;
+    transform: translateY(10px);
+}
+
+/* DOT CONTROLS */
+#imgControl {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+#imgControl i {
+    font-size: 10px;
+    color: #555;
+    cursor: pointer;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+#imgControl i.active {
+    color: white;
+    transform: scale(1.4);
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+    #achievementsContents {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .achievement-text h2 {
+        font-size: 30px;
+    }
+
+    .achievement-text p {
+        font-size: 14px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/* ============================= */
+/* TECH TICKER – RESPONSIVE FIX */
+/* ============================= */
+
+.tech-ticker {
+    width: 100%;
+    overflow: hidden;
+    padding: clamp(12px, 4vw, 24px) 0;
+    background: transparent;
+}
+
+.ticker-track {
+    display: flex;
+    align-items: center;
+    width: max-content;
+    animation: snake 26s linear infinite;
+}
+
+.tech-item {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 clamp(10px, 3vw, 32px);
+}
+
+/* Logo box scales by screen size */
+.logo-box {
+    width: clamp(50px, 7vw, 80px);
+    height: clamp(50px, 7vw, 80px);
+    background: #ffffff;
+    border-radius: clamp(4px, 1vw, 8px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Logo always centered */
+.logo-box img {
+    width: 70%;
+    height: 70%;
+    object-fit: contain;
+}
+
+/* Infinite snake animation */
+@keyframes snake {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+
+
+
+
+
+
+
+/* ============================= */
+/* CORE VALUES – REDESIGN */
+/* ============================= */
+
+.core-values {
+    width: 100%;
+    padding: clamp(60px, 10vw, 120px) 20px;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.core-values-container {
+
+    width: 100%;
+    color: white;
+}
+
+.core-values-title {
+    font-family: 'Orbitron';
+    font-size: clamp(28px, 6vw, 46px);
+    color: #cccccc;
+    margin-bottom: 40px;
+}
+
+/* GRID */
+#core-values-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 30px;
+}
+
+/* CARD */
+.value-card {
+    position: relative;
+    background: linear-gradient(180deg, #1a2a3a, #0f1a26);
+    border-radius: 18px;
+    padding: 30px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
+    
+}
+
+.value-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.55);
+}
+
+/* NUMBER */
+.value-number {
+    font-family: 'Anton';
+    font-size: 48px;
+    color: rgba(255, 255, 255, 0.08);
+    position: absolute;
+    top: 20px;
+    right: 24px;
+}
+
+/* TEXT */
+.value-card h3 {
+    font-family: 'Righteous';
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+.value-card p {
+    font-family: 'Poppins';
+    font-size: 14px;
+    line-height: 1.6;
+    color: #d0d0d0;
+}
+
+/* RESPONSIVE TWEAK */
+@media (max-width: 480px) {
+    .value-card {
+        padding: 24px;
+    }
+
+    .value-number {
+        font-size: 40px;
+    }
+}
+
+
+
+
+
+
+
+/* Footer Base */
+.footer {
+    width: 100%;
+    background: linear-gradient(180deg, #0d111b 0%, #071421 100%);
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+    padding: 60px 20px 20px 20px;
+    box-sizing: border-box;
+}
+
+/* Main Container */
+.footer-container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+/* Footer Brand / Message */
+.footer-brand {
+    flex: 2 1 350px;
+    min-width: 250px;
+}
+
+.footer-brand h2 {
+    font-family: 'Akaya Kanadaka', cursive;
+    font-size: clamp(24px, 3vw, 32px);
+    margin-bottom: 16px;
+}
+
+.footer-brand p {
+    font-size: clamp(12px, 1.2vw, 16px);
+    margin-bottom: 8px;
+    line-height: 1.6;
+    color: #cccccc;
+}
+
+.footer-brand .copyright {
+    font-style: italic;
+    font-size: clamp(12px, 1vw, 14px);
+    color: #888888;
+}
+
+/* Contact & Navigation Sections */
+.footer-section {
+    flex: 1 1 180px;
+    min-width: 150px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-section h3 {
+    font-family: 'Righteous', sans-serif;
+    font-size: clamp(16px, 2vw, 20px);
+    margin-bottom: 8px;
+    color: #fff;
+}
+
+.footer-link {
+    color: #ffffff;
+    font-size: clamp(12px, 1.2vw, 16px);
+    text-decoration: none;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.footer-link::after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background: #7c5cff;
+    left: 0;
+    bottom: -2px;
+    transition: 0.3s;
+}
+
+.footer-link:hover::after {
+    width: 100%;
+}
+
+.footer-link:hover {
+    color: #7c5cff;
+}
+
+/* Footer Bottom Line */
+.footer-bottom {
+    margin-top: 40px;
+    text-align: center;
+    font-size: clamp(12px, 1vw, 14px);
+    color: #888888;
+    border-top: 1px solid #333;
+    padding-top: 12px;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-section,
+    .footer-brand {
+        flex: 1 1 100%;
+    }
+}
+
+@media (max-width: 500px) {
+    .footer-brand h2 {
+        font-size: 20px;
+    }
+
+    .footer-section h3 {
+        font-size: 16px;
+    }
+
+    .footer-link,
+    .footer-brand p,
+    .footer-bottom p {
+        font-size: 12px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* scroll animation */
+
+.hidden :nth-child(1) {
+    opacity: 0;
+    transform: translateY(150%);
+    transition: opacity 0.8s ease-out, transform 0.5s ease-in;
+}
+
+.show :nth-child(1) {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+.hidden :nth-child(2) {
+    opacity: 0;
+    transform: translateY(100%);
+    transition-delay: 1s;
+    transition: opacity 0.8s ease-out, transform 0.5s ease-in;
+}
+
+.show :nth-child(2) {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.hidden :nth-child(3) {
+    opacity: 0;
+    transform: translateY(50%);
+    transition-delay: 2s;
+    transition: opacity 0.8s ease-out, transform 0.5s ease-in;
+}
+
+.show :nth-child(3) {
+    opacity: 1;
+    transform: translateY(0);
 }
