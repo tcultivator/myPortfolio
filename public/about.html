@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="about.css">
     <script defer src="about.js"></script>
+    <!-- Modern Fonts & Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <script src="https://kit.fontawesome.com/2820820f6e.js" crossorigin="anonymous"></script>
     <link href='https://fonts.googleapis.com/css?family=Righteous' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Akaya Kanadaka' rel='stylesheet'>
@@ -16,63 +18,46 @@
 </head>
 
 <body>
+    <div class="glass-background"></div>
     <nav id="headerNav">
         <div id="logo">
-            <label id="homeBtn">LP</label>
+            <label id="homeBtn" onclick="window.location.reload()">LP<span>.</span></label>
         </div>
+
         <div id="navControl">
-            <div id="workBtn">
-                <a href="../index.html">Works</a>
-                <label></label>
-            </div>
-            <div id="aboutBtn">
-                <a href="about.html">About</a>
-                <label></label>
-            </div>
-            <div id="resumeBtn">
-                <a href="https://drive.google.com/file/d/1XuLLWt--a9P6kpBWgLpvM3CJZXmAMo9_/view?usp=sharing"
-                    target="_blank">Resume</a>
-                <label></label>
-            </div>
+            <a href="/myPortfolio/index.html">Works</a>
+            <a href="/myPortfolio/public/about.html">About</a>
+            <a href="https://drive.google.com/..." target="_blank" class="resume-btn">Resume</a>
         </div>
+
+        <!-- The Menu Button -->
         <div id="mobileNav">
-            <label id="line1"></label>
-            <label id="line2"></label>
+            <span id="line1"></span>
+            <span id="line2"></span>
         </div>
     </nav>
 
-    <div id="frontTextBody" class="hidden">
-        <div id="frontText">
-            <label>I AM LUIGIE</label>
+    <header id="hero" class="">
+        <div class="hero-content">
+            <h1 class="glitch-text">I AM LUIGIE</h1>
+            <div class="sub-text">
+                <p>a <span>Web Developer</span> who is <span>passionate</span>, <span>dedicated</span>, and always <span>eager to learn</span>.
+                    I believe actions speak louder than words, and I will prove it through my work.
+                </p>
 
+            </div>
+            <div class="scroll-indicator">
+                <div class="mouse"></div>
+            </div>
         </div>
-
-        <div id="subText">
-            <p>a Frontend Web Developer who is passionate, dedicated, and always eager to learn.
-                I believe actions speak louder than words, and I will prove it through my work.
-            </p>
-
-            <p>I didn&apos;t plan to become a developer at first and struggled with self-doubt.
-                Everything changed during my final year in college when I stepped up as a team leader and programmer.
-            </p>
-            <p>What drives me as a developer is the process of building and coding. Through each problem I solve, I
-                realize there&apos;s always more to learn, and that challenge is what keeps me passionate about
-                programming.
-
-            </p>
-        </div>
-    </div>
+    </header>
 
 
 
 
-
-
-
-
-    <div class="tech-ticker">
+    <!-- Tech Ticker -->
+    <section class="tech-ticker">
         <div class="ticker-track">
-
             <!-- SET 1 -->
             <div class="tech-item">
                 <div class="logo-box">
@@ -242,10 +227,8 @@
                     <img src="../assets/techStack/Postman_(software).png" alt="Postman">
                 </div>
             </div>
-
-
         </div>
-    </div>
+    </section>
 
 
 
@@ -256,23 +239,22 @@
 
 
 
-    <div id="achievementsBody">
-        <div id="achievementsContents">
-
-            <div class="achievement-text">
-                <h2>Team Leader × Developer</h2>
-                <p>
-                    During our capstone project, I took on the role of team leader and lead developer.
-                    Our project earned <strong>2nd place for Best Capstone</strong>, which was a proud
-                    moment and a great validation of the hard work and problem-solving we put into it.
-                </p>
+    <!-- Achievements Section -->
+    <section id="achievements" class="">
+        <div class="achievement-card">
+            <div class="achievement-info">
+                <span class="tag">Capstone Project</span>
+                <h2>Leader & Developer</h2>
+                <p>I led the development of our capstone project, securing <strong>2nd Place for Best Capstone</strong>.
+                    This experience validated my ability to bridge the gap between team leadership and technical
+                    execution.</p>
             </div>
-
-            <div class="slider">
-                <img id="imageForSlider" src="../assets/CapstonePic.png" alt="Achievement image">
-
+            <div class="achievement-slider">
+                <div class="slider-wrapper">
+                    <img id="imageForSlider" src="../assets/CapstonePic.png" alt="Capstone Project">
+                </div>
                 <div id="imgControl">
-                    <i id="img1" class="fa-solid fa-circle"></i>
+                    <i id="img1" class="active fa-solid fa-circle"></i>
                     <i id="img2" class="fa-solid fa-circle"></i>
                     <i id="img3" class="fa-solid fa-circle"></i>
                     <i id="img4" class="fa-solid fa-circle"></i>
@@ -280,9 +262,8 @@
                     <i id="img6" class="fa-solid fa-circle"></i>
                 </div>
             </div>
-
         </div>
-    </div>
+    </section>
 
 
 
@@ -321,52 +302,51 @@
 
     <footer class="footer">
         <div class="footer-container">
-
-            <!-- Footer Brand / Message -->
+            <!-- Brand Section -->
             <div class="footer-brand">
-                <h2>Thanks for stopping by! ❤️</h2>
-                <p>Fueled by curiosity, caffeine, dreams, and a stubborn “just one more line of code.”</p>
-                <p class="copyright">Luigie © 2026</p>
+                <h2 class="logo">LP<span>.</span></h2>
+                <p>Building high-performance web applications with a focus on user experience and clean code.</p>
+                <div class="footer-socials">
+                    <a href="#"><i class="fa-brands fa-github"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="footer-group">
+                <h3>Explore</h3>
+                <ul class="footer-links">
+                    <li><a href="/myPortfolio/index.html">Works</a></li>
+                    <li><a href="/myPortfolio/public/about.html">About Me</a></li>
+
+                </ul>
             </div>
 
             <!-- Contact Section -->
-            <div class="footer-section">
-                <h3>Contact Me</h3>
-                <a href="mailto:lpanahon06@gmail.com" class="footer-link">Email</a>
-                <a href="https://www.linkedin.com/in/luigie-panahon-541733367/" target="_blank"
-                    class="footer-link">LinkedIn</a>
+            <div class="footer-group">
+                <h3>Contact</h3>
+                <ul class="footer-links">
+                    <li><a href="mailto:lpanahon06@gmail.com">lpanahon06@gmail.com</a></li>
+                    <li>
+                        <p>Nueva Ecija, Philippines</p>
+                    </li>
+                    <li><a href="#" class="status-badge">Available for Hire</a></li>
+                </ul>
             </div>
-
-            <!-- Navigation Section -->
-            <div class="footer-section">
-                <h3>Navigation</h3>
-                <a href="../index.html" class="footer-link">Work</a>
-                <a href="about.html" class="footer-link">About</a>
-                <a href="https://drive.google.com/file/d/1XuLLWt--a9P6kpBWgLpvM3CJZXmAMo9_/view?usp=sharing"
-                    target="_blank" class="footer-link">Resume</a>
-            </div>
-
         </div>
 
-        <!-- Footer Bottom Line -->
+        <!-- Bottom Copyright -->
         <div class="footer-bottom">
-            <p>Made with by Luigie | 2026</p>
+            <p>Copyright &copy; 2026 Luigie Panahon. All rights reserved.</p>
+            <div class="footer-legal">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
         </div>
     </footer>
 
-
-
-
-
-
-
-
-
-
-
-    <div id="backtoTop">
-        <a id="gototop"><i class="fa-solid fa-square-caret-up"></i></a>
-    </div>
+    <button id="backtoTop"><i class="fa-solid fa-arrow-up"></i></button>
 
 
 </body>
