@@ -37,7 +37,21 @@ document.addEventListener('click', (e) => {
 })
 
 
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('show')
+            console.log('this is show')
+        } else {
+            entry.target.classList.remove('show')
+            console.log('this is hidden')
+        }
+    })
+})
 
+
+const hiddenElements = document.querySelectorAll('.hidden')
+hiddenElements.forEach((el) => observer.observe(el));
 
 
 const gototop = document.getElementById('gototop')
@@ -145,7 +159,7 @@ setInterval(() => {
 
 
 
-document.getElementById('homeBtn').addEventListener('click',()=>{
+document.getElementById('homeBtn').addEventListener('click', () => {
     window.location.replace('../index.html')
     console.log('')
 })
