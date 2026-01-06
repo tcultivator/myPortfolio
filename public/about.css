@@ -21,9 +21,6 @@ body {
     line-height: 1.6;
 }
 
-body::-webkit-scrollbar {
-    display: none;
-}
 
 .glass-background {
     position: fixed;
@@ -806,4 +803,5 @@ body::-webkit-scrollbar {
 #imgControl i.active {
     color: var(--primary);
     transform: scale(1.5);
+
 }
