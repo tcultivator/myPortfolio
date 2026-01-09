@@ -1,4 +1,3 @@
-// 1. Smooth Scroll Fade-in
 const observerOptions = {
     threshold: 0.5
 };

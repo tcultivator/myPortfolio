@@ -7,10 +7,7 @@
     --text: #e0e0e0;
 }
 
-html {
-    scroll-behavior: smooth;
-    /* Ensures smooth scrolling throughout the page */
-}
+
 
 * {
     box-sizing: border-box;
@@ -21,6 +18,7 @@ html {
 html,
 body {
     scroll-behavior: smooth !important;
+    overflow-x: hidden;
 }
 
 body {
@@ -196,7 +194,7 @@ body {
         display: none;
     }
 
-    /* Add your mobile burger logic here */
+
 }
 
 
@@ -363,12 +361,6 @@ body {
 
 
 
-
-
-/* ============================= */
-/* CORE VALUES – REDESIGN */
-/* ============================= */
-
 .core-values {
     width: 100%;
     padding: clamp(60px, 10vw, 120px) 20px;
@@ -390,14 +382,12 @@ body {
     margin-bottom: 40px;
 }
 
-/* GRID */
 #core-values-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     gap: 30px;
 }
 
-/* CARD */
 .value-card {
     position: relative;
     background: linear-gradient(180deg, #1a2a3a, #0f1a26);
@@ -412,7 +402,6 @@ body {
     box-shadow: 0 30px 60px rgba(0, 0, 0, 0.55);
 }
 
-/* NUMBER */
 .value-number {
     font-family: 'Anton';
     font-size: 48px;
@@ -422,7 +411,7 @@ body {
     right: 24px;
 }
 
-/* TEXT */
+
 .value-card h3 {
     font-family: 'Righteous';
     font-size: 20px;
@@ -436,7 +425,7 @@ body {
     color: #d0d0d0;
 }
 
-/* RESPONSIVE TWEAK */
+
 @media (max-width: 480px) {
     .value-card {
         padding: 24px;
@@ -588,7 +577,7 @@ body {
     color: #fff;
 }
 
-/* Responsive Grid */
+
 @media (max-width: 900px) {
     .footer-container {
         grid-template-columns: 1fr;
@@ -622,9 +611,6 @@ body {
 
 
 /* scroll animation */
-
-
-
 .hidden :nth-child(1) {
     opacity: 0;
     transform: translateY(150%);
@@ -667,10 +653,9 @@ body {
 
 
 
-/* --- MOBILE MENU BUTTON --- */
+/* mobile menu button */
 #mobileNav {
     display: none;
-    /* Hidden on Desktop */
     flex-direction: column;
     justify-content: center;
     gap: 6px;
@@ -678,7 +663,7 @@ body {
     height: 30px;
     cursor: pointer;
     z-index: 1001;
-    /* Above the navigation panel */
+    
 }
 
 #mobileNav span {
@@ -686,27 +671,25 @@ body {
     width: 100%;
     height: 2px;
     background-color: white;
-    /* Ensure color is visible */
+    
     transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     border-radius: 2px;
 }
+/* mobile view */
 
-/* --- MOBILE VIEW (MAX 1000px) --- */
 @media (max-width: 1000px) {
     #mobileNav {
         display: flex;
-        /* Show button on mobile */
+        
     }
 
     #navControl {
         position: fixed;
         top: 0;
         right: -100%;
-        /* Hidden off-screen to the right */
         width: 100%;
         height: 100vh;
         background: rgba(7, 20, 33, 0.95);
-        /* Match your theme */
         backdrop-filter: blur(20px);
         display: flex;
         flex-direction: column;
@@ -819,4 +802,18 @@ body {
     color: var(--primary);
     transform: scale(1.5);
 
+}
+
+
+/* Hide scrollbar for all browsers */
+* {
+    scrollbar-width: none;
+    /* Firefox */
+    -ms-overflow-style: none;
+    /* IE 10+ */
+}
+
+*::-webkit-scrollbar {
+    display: none;
+    /* Chrome, Safari, Edge */
 }
