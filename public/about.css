@@ -7,10 +7,20 @@
     --text: #e0e0e0;
 }
 
+html {
+    scroll-behavior: smooth;
+    /* Ensures smooth scrolling throughout the page */
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+html,
+body {
+    scroll-behavior: smooth !important;
 }
 
 body {
@@ -726,7 +736,9 @@ body {
         transform: translateY(-4px) rotate(-45deg);
     }
 
-    .achievement-card {flex-direction: column;}
+    .achievement-card {
+        flex-direction: column;
+    }
 }
 
 
@@ -808,4 +820,3 @@ body {
     transform: scale(1.5);
 
 }
-

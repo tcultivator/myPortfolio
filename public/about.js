@@ -7,11 +7,11 @@
 const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
         if (entry.isIntersecting) {
-            entry.target.classList.add('show')
-            console.log('this is show')
+            entry.target.classList.add('show');
+            entry.target.classList.remove('hidden');
         } else {
+            entry.target.classList.add('hidden');
             entry.target.classList.remove('show')
-            console.log('this is hidden')
         }
     })
 })
@@ -21,8 +21,6 @@ const hiddenElements = document.querySelectorAll('.hidden')
 hiddenElements.forEach((el) => observer.observe(el));
 
 
-// 2. Back to Top Button
-const backToTop = document.getElementById('backtoTop');
 
 window.addEventListener('scroll', () => {
     if (window.scrollY > 500) {
@@ -32,8 +30,38 @@ window.addEventListener('scroll', () => {
     }
 });
 
-backToTop.addEventListener('click', () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+function smoothScrollToTop() {
+    const startPos = window.pageYOffset || document.documentElement.scrollTop;
+    const duration = 1000;
+    let startTime = null;
+
+
+    function easeOutCubic(t) {
+        return 1 - Math.pow(1 - t, 3);
+    }
+
+    function animationLoop(currentTime) {
+        if (startTime === null) startTime = currentTime;
+        const timeElapsed = currentTime - startTime;
+        const progress = Math.min(timeElapsed / duration, 1);
+
+        const easedProgress = easeOutCubic(progress);
+
+        window.scrollTo(0, startPos * (1 - easedProgress));
+
+        if (timeElapsed < duration) {
+            requestAnimationFrame(animationLoop);
+        }
+    }
+
+    requestAnimationFrame(animationLoop);
+}
+
+const backToTop = document.getElementById('backtoTop');
+
+backToTop.addEventListener('click', (e) => {
+    e.preventDefault();
+    smoothScrollToTop();
 });
 
 
