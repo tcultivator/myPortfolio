@@ -10,8 +10,7 @@
 html,
 body {
     scroll-behavior: smooth !important;
-    height: 100%;
-    /* Important for scroll calculations */
+    overflow-x: hidden;
 }
 
 * {
@@ -239,7 +238,6 @@ body {
 /* Back to Top */
 #backtoTop {
     display: flex;
-    /* Changed from button to flex for the icon */
     align-items: center;
     justify-content: center;
     text-decoration: none;
@@ -277,7 +275,6 @@ body {
         display: none;
     }
 
-    /* Add your mobile burger logic here */
 }
 
 
@@ -419,7 +416,6 @@ body {
     color: #fff;
 }
 
-/* Responsive Grid */
 @media (max-width: 900px) {
     .footer-container {
         grid-template-columns: 1fr;
@@ -446,9 +442,7 @@ body {
 
 
 
-/* --- SCROLL ANIMATION LOGIC --- */
-
-/* 1. Default Card (Image Left, Text Right) */
+/* scroll animation */
 .work-card.hidden .work-image {
     opacity: 0;
     transform: translateX(-100px);
@@ -463,7 +457,6 @@ body {
     transition: all 0.8s ease-out;
 }
 
-/* 2. Reverse Card (Text Left, Image Right) */
 .work-card.rev.hidden .work-image {
     transform: translateX(100px);
     /* Slide from Right */
@@ -474,20 +467,16 @@ body {
     /* Slide from Left */
 }
 
-/* 3. The "Show" State (When it enters the screen) */
 .work-card.show .work-image,
 .work-card.show .work-desc {
     opacity: 1;
     transform: translateX(0);
-    /* Move to original position */
 }
 
-/* Delay the text slightly for a more professional feel */
 .work-card.show .work-desc {
     transition-delay: 0.2s;
 }
 
-/* Ensure parents don't clip the animation */
 #worksBody {
     overflow: hidden;
 }
@@ -498,10 +487,8 @@ body {
 
 
 
-/* --- MOBILE MENU BUTTON --- */
 #mobileNav {
     display: none;
-    /* Hidden on Desktop */
     flex-direction: column;
     justify-content: center;
     gap: 6px;
@@ -509,7 +496,6 @@ body {
     height: 30px;
     cursor: pointer;
     z-index: 1001;
-    /* Above the navigation panel */
 }
 
 #mobileNav span {
@@ -517,27 +503,22 @@ body {
     width: 100%;
     height: 2px;
     background-color: white;
-    /* Ensure color is visible */
     transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     border-radius: 2px;
 }
 
-/* --- MOBILE VIEW (MAX 1000px) --- */
 @media (max-width: 1000px) {
     #mobileNav {
         display: flex;
-        /* Show button on mobile */
     }
 
     #navControl {
         position: fixed;
         top: 0;
         right: -100%;
-        /* Hidden off-screen to the right */
         width: 100%;
         height: 100vh;
         background: rgba(7, 20, 33, 0.95);
-        /* Match your theme */
         backdrop-filter: blur(20px);
         display: flex;
         flex-direction: column;
@@ -566,4 +547,20 @@ body {
     #mobileNav.open #line2 {
         transform: translateY(-4px) rotate(-45deg);
     }
+}
+
+
+
+
+/* Hide scrollbar for all browsers */
+* {
+    scrollbar-width: none;
+    /* Firefox */
+    -ms-overflow-style: none;
+    /* IE 10+ */
+}
+
+*::-webkit-scrollbar {
+    display: none;
+    /* Chrome, Safari, Edge */
 }
