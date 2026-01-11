@@ -564,3 +564,12 @@ body {
     display: none;
     /* Chrome, Safari, Edge */
 }
+
+
+@media (max-width:600px) {
+
+    #headerNav {
+        padding: 5px 10px;
+
+    }
+}
